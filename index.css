@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bacasime Antique", serif;
+  overflow-x: hidden;
+  background-color: #f4f6fc;
+}
+.header1 {
+  background-image: url(src/gym.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 200px;
+  margin-top: -20px;
+  margin-left: -5px;
+}
+h1 {
+  font-size: 50px;
+  color: #050a30;
+  margin-top: -10px;
+}
+h2 {
+  color: #050a30;
+  font-size: 40px;
+  opacity: 0.5;
+  margin-bottom: 60px;
+}
+.head2 {
+  margin-left: -140px;
+}
+.BMI-link {
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid #050a30;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 1px 2px 1px 1px;
+  font-weight: 500;
+  transition: all 200ms ease-in-out;
+}
+.BMI-link:hover {
+  background-color: #050a30;
+  color: white;
+}
