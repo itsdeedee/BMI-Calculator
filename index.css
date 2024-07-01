@@ -18,11 +18,12 @@ body {
 }
 h1 {
   font-size: 50px;
-  color: #050a30;
+  color: #5862a9;
   margin-top: -10px;
+  font-weight: 800;
 }
 h2 {
-  color: #050a30;
+  color: #5862a9;
   font-size: 40px;
   opacity: 0.5;
   margin-bottom: 60px;
@@ -33,127 +34,79 @@ h2 {
 .BMI-link {
   text-decoration: none;
   font-size: 18px;
-  border: 2px solid #050a30;
+  border: 2px solid #5862a9;
+  color: #5862a9;
   padding: 15px;
   border-radius: 25px;
   box-shadow: 1px 2px 1px 1px;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 200ms ease-in-out;
 }
 .BMI-link:hover {
-  background-color: #050a30;
+  background-color: #5862a9;
   color: white;
 }
 .containert {
-  position: absolute;
-  left: 30%;
-  right: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0 auto;
 }
 .box {
   text-align: center;
-  background-color: #efefef;
-  min-width: 450px;
+  max-width: 600px;
+  max-height: 400px;
   border-radius: 10px;
-
-  box-shadow: 0px 0px 10px 5px #003060;
-  position: relative;
+  box-shadow: 0px 0px 10px 5px #5862a9;
 }
 
 h3 {
   font-size: 33px;
-  padding: 10px 0;
+  padding: 30px 0;
   border-radius: 15px;
-  color: #003060;
-}
-.input {
-  padding: 25px;
-  background-color: #f4f6fc;
-  box-shadow: 0.5 0.1 0.5 0.1 rgba(0, 0, 0, 0.15);
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.input label {
-  display: block;
-  font-size: 20px;
+  color: #114477;
   font-weight: 600;
-  color: #003060;
-  margin-bottom: 20px;
 }
-.input input {
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #003060;
-  background-color: #f4f6fc;
+
+label {
+  font-size: 17px;
+  font-weight: 500;
+  color: #114477;
+  font-family: "Manrope", sans-serif;
 }
+
 .Sex {
   display: flex;
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 50px;
+}
+
+.Age input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #003060;
   background-color: #f4f6fc;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  margin-left: 10px;
 }
-.Sex .container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  font-weight: 600;
-  color: #003060;
-}
-.Sex .container input {
-  position: absolute;
-  cursor: pointer;
-  opacity: 0;
-}
-.newRadio {
-  position: absolute;
-  top: 15px;
-  left: 0;
-  border-radius: 40%;
-  height: 15px;
-  width: 15px;
-  background-color: #efefef;
-  border: 1px solid#003060;
-}
-.Sex .container:hover input ~ .newRadio {
-  background-color: #f4f6fc;
-}
-.Sex .container input:checked ~ .newRadio {
-  background-color: #003060;
-}
+
 .Scale {
-  padding: 25px;
-  background-color: #f4f6fc;
-  box-shadow: 0.5 0.1 0.5 0.1 rgba(0, 0, 0, 0.15);
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  padding: 0px 0px 20px;
 }
-.Scale .scale-input label {
-  font-size: 18px;
-  font-weight: 600;
-  color: #003060;
-  margin-bottom: 20px;
-  display: block;
+.Scale label {
+  margin-left: -10px;
 }
 .Scale input {
   outline: none;
   border: none;
   border-bottom: 1px solid #003060;
   background-color: #f4f6fc;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  margin-left: 5px;
 }
+
 .BMI-result {
   font-size: 18px;
   font-weight: 600;
@@ -162,11 +115,11 @@ h3 {
 }
 .calculate-BMI {
   text-decoration: none;
-  background-color: #003060;
-  padding: 12px 22px;
+  background-color: #114477;
+  padding: 12px 25px;
   border-radius: 5px;
   color: #f4f6fc;
-  box-shadow: 1px 1px 1px 1px black;
+  font-weight: 600;
   transition: all 200ms ease-in-out;
 }
 .calculate-BMI:hover {
@@ -181,4 +134,52 @@ h3 {
   margin-right: 200px;
   padding: 10px;
   font-size: 20px;
+}
+.W-BMI {
+  margin-bottom: 80px;
+  margin-top: 200px;
+}
+
+.design {
+  background-color: #5862a9;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: -25px;
+}
+
+.bodyImg {
+  margin-top: 10px;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #050a30;
+}
+.BMI-def {
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #050a30;
+}
+.design2 {
+  background-color: white;
+  position: relative;
+}
+.units-head {
+  display: flex;
+
+  justify-content: space-around;
+}
+.units-head div {
+  padding: 80px 0px 60px;
+}
+.U,
+.M {
+  color: #050a30;
+  font-size: 25px;
+  font-weight: 700;
+}
+.border-bottom-active {
+  border-bottom: 3px solid #5862a9;
+  padding: 5px 60px;
 }
