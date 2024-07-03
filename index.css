@@ -56,7 +56,7 @@ h2 {
 .box {
   text-align: center;
   max-width: 600px;
-  max-height: 400px;
+  padding: ;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px #5862a9;
 }
@@ -75,7 +75,10 @@ label {
   color: #114477;
   font-family: "Manrope", sans-serif;
 }
-
+input {
+  font-family: sans-serif;
+  font-size: 14px;
+}
 .Sex {
   display: flex;
   justify-content: space-around;
@@ -120,18 +123,22 @@ label {
   border-radius: 5px;
   color: #f4f6fc;
   font-weight: 600;
+  border: none;
   transition: all 200ms ease-in-out;
 }
+.clear {
+  padding: 12px 37px;
+}
 .calculate-BMI:hover {
-  border: 2px solid #003060;
+  box-shadow: 0.5px 0.5px 0.5px 1px #003060;
   color: #003060;
   background-color: #f4f6fc;
 }
 .result {
   background-color: #f4f6fc;
   border-radius: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 180px;
+  margin-right: 180px;
   padding: 10px;
   font-size: 20px;
 }
@@ -150,6 +157,7 @@ label {
 .bodyImg {
   margin-top: 10px;
 }
+
 h4 {
   font-size: 25px;
   font-weight: 600;
@@ -158,7 +166,7 @@ h4 {
 }
 .BMI-def {
   margin-top: 30px;
-  margin-left: 20px;
+
   color: #050a30;
 }
 .design2 {
@@ -181,5 +189,7 @@ h4 {
 }
 .border-bottom-active {
   border-bottom: 3px solid #5862a9;
-  padding: 5px 60px;
+}
+.hidden {
+  display: none;
 }
