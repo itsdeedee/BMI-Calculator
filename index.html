@@ -50,15 +50,18 @@
           </div>
         </div>
       </div>
-      <div class="design2">
+      <div class="design2" id="form">
         <div class="units-head">
           <div class="unitM">
-            <a href="" class="M text-decoration-none border-bottom-active"
+            <a
+              href=""
+              class="M text-decoration-none border-bottom-active"
+              id="unitM"
               >Metric Units</a
             >
           </div>
           <div class="unitU">
-            <a href="" class="U text-decoration-none">Us Units</a>
+            <a href="" class="U text-decoration-none" id="unitU">Us Units</a>
           </div>
         </div>
 
@@ -98,16 +101,20 @@
                   />
                 </div>
               </div>
-              <a class="calculate-BMI" href="/">Calculate</a>
+              <button class="calculate-BMI" href="" id="calculate">
+                Calculate
+              </button>
+              <button class="calculate-BMI clear" id="clear" href="/">
+                Clear
+              </button>
             </div>
             <div class="BMI-result">
-              <p></p>
-              <div class="result"></div>
+              <p class="result">0.00</p>
               <p class="comment"></p>
             </div>
           </div>
         </div>
-        <div class="containert mt-5" id="USunit">
+        <div class="containert hidden" id="USunit">
           <div class="box">
             <h3 class="BMIheader">BMI Calculator</h3>
             <div class="bmiContent">
@@ -129,7 +136,7 @@
                   <label for="height" id="height-label">Height</label>
                   <input
                     type="number"
-                    id="height"
+                    id="heightfeet"
                     placeholder="                 ft"
                     class="w-25"
                     required
@@ -146,21 +153,22 @@
                   <label for="height" id="weight-label">Weight</label>
                   <input
                     type="number"
-                    id="weight"
+                    id="weightpounds"
                     placeholder="                       pounds"
                   />
                 </div>
               </div>
-              <a class="calculate-BMI" href="/">Calculate</a>
+              <button class="calculate-BMI" id="calculate2">Calculate</button>
+              <button class="calculate-BMI clear" id="clear2">Clear</button>
             </div>
             <div class="BMI-result">
-              <p></p>
-              <div class="result"></div>
-              <p class="comment"></p>
+              <p class="result" id="result2">0.00</p>
+              <p class="comment" id="comment2"></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
