@@ -59,6 +59,7 @@ h2 {
   padding: ;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px #5862a9;
+  margin-bottom: 100px;
 }
 
 h3 {
@@ -85,6 +86,12 @@ input {
   align-content: center;
   align-items: center;
   padding: 20px 50px;
+}
+.Limi {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  text-align: center;
 }
 
 .Age input {
@@ -143,7 +150,7 @@ input {
   font-size: 20px;
 }
 .W-BMI {
-  margin-bottom: 80px;
+  margin-bottom: 150px;
   margin-top: 200px;
 }
 
@@ -192,4 +199,16 @@ h4 {
 }
 .hidden {
   display: none;
+}
+.br {
+  padding: 35px 10px;
+}
+.head-limi {
+  font-size: 20px;
+  font-weight: 600;
+}
+i {
+  border: 2px solid #5862a9;
+  padding: 10px;
+  border-radius: 5px;
 }
