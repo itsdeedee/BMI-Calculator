@@ -27,222 +27,226 @@
       <div class="head2">
         <h1>Body Mass Index</h1>
         <h2>Calculator</h2>
-        <a class="BMI-link" href="/">Calculate your BMI</a>
+        <a class="BMI-link" href="#form">Calculate your BMI</a>
       </div>
     </header>
     <div class="body">
-      <div class="W-BMI">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <img src="src/body.png" class="img-fluid bodyImg" />
-              <p class="design"></p>
-            </div>
-            <div class="col-sm-6">
-              <h4>What is BMI?</h4>
-              <p class="BMI-def">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                quas accusantium delectus nihil maxime, placeat porro inventore
-                tempora quisquam nostrum ipsam quis? Similique vero consequatur
-                dolorum dolorem eum mollitia consectetur. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Eveniet quas accusantium
-                delectus nihil maxime, placeat porro inventore tempora quisquam
-                nostrum ipsam quis? Similique vero consequatur dolorum dolorem
-                eum mollitia consectetur.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="design2" id="form">
-        <div class="units-head">
-          <div class="unitM">
-            <a
-              href=""
-              class="M text-decoration-none border-bottom-active"
-              id="unitM"
-              >Metric Units</a
-            >
-          </div>
-          <div class="unitU">
-            <a href="" class="U text-decoration-none" id="unitU">Us Units</a>
-          </div>
-        </div>
-
-        <div class="containert" id="metric">
-          <div class="box">
-            <h3 class="BMIheader">BMI Calculator</h3>
-            <div class="bmiContent">
-              <div class="Age">
-                <label for="Age" class="Age">Age</label>
-                <input type="number" class="ageInput" id="Age" required />
+      <section id="sec1">
+        <div class="W-BMI">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="src/body.png" class="img-fluid bodyImg" />
+                <p class="design"></p>
               </div>
-              <div class="Sex">
-                <input type="radio" name="gender" id="male" />
-                <label class="text" for="male" id="male-label">Male</label>
-
-                <input type="radio" name="gender" id="female" />
-                <label class="text" for="female" id="female-label"
-                  >Female</label
-                >
-              </div>
-              <div class="Scale">
-                <div class="scale-input">
-                  <label for="height" id="height-label">Height</label>
-                  <input
-                    type="number"
-                    id="height"
-                    placeholder="                              cm"
-                    required
-                  />
-                </div>
-                <div class="scale-input">
-                  <label for="height" id="weight-label">Weight</label>
-                  <input
-                    type="number"
-                    id="weight"
-                    placeholder="                              kg"
-                  />
-                </div>
-              </div>
-              <button class="calculate-BMI" href="" id="calculate">
-                Calculate
-              </button>
-              <button class="calculate-BMI clear" id="clear" href="/">
-                Clear
-              </button>
-            </div>
-            <div class="BMI-result">
-              <p class="result">0.00</p>
-              <p class="comment"></p>
-            </div>
-          </div>
-        </div>
-        <div class="containert hidden" id="USunit">
-          <div class="box">
-            <h3 class="BMIheader">BMI Calculator</h3>
-            <div class="bmiContent">
-              <div class="Age">
-                <label for="Age" class="Age">Age</label>
-                <input type="number" class="ageInput" id="Age" required />
-              </div>
-              <div class="Sex">
-                <input type="radio" name="gender" id="male" />
-                <label class="text" for="male" id="male-label">Male</label>
-
-                <input type="radio" name="gender" id="female" />
-                <label class="text" for="female" id="female-label"
-                  >Female</label
-                >
-              </div>
-              <div class="Scale">
-                <div class="scale-input">
-                  <label for="height" id="height-label">Height</label>
-                  <input
-                    type="number"
-                    id="heightfeet"
-                    placeholder="                 ft"
-                    class="w-25"
-                    required
-                  />
-                  <input
-                    type="number"
-                    id="heightIn"
-                    placeholder="                 in"
-                    required
-                    class="w-25"
-                  />
-                </div>
-                <div class="scale-input">
-                  <label for="height" id="weight-label">Weight</label>
-                  <input
-                    type="number"
-                    id="weightpounds"
-                    placeholder="                       pounds"
-                  />
-                </div>
-              </div>
-              <button class="calculate-BMI" id="calculate2">Calculate</button>
-              <button class="calculate-BMI clear" id="clear2">Clear</button>
-            </div>
-            <div class="BMI-result">
-              <p class="result" id="result2">0.00</p>
-              <p class="comment" id="comment2"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h4 class="mt-5">Limitations of BMI</h4>
-
-        <div class="container w-75">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4 br mr-3">
-              <div>
-                <i
-                  class="fa-solid fa-cake-candles fs-4"
-                  style="color: #5862a9"
-                ></i>
-                <span class="head-limi">Age</span>
-              </div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequatur perferendis consequuntur alias, ipsam sequi aliquid
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 br mr-3">
-              <i
-                class="fa-solid fa-person-half-dress fs-4"
-                style="color: #5862a9"
-              ></i>
-              <span class="head-limi">Gender</span>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequatur perferendis consequuntur alias, ipsam sequi aliquid
-              </p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 br mr-3">
-              <i class="fa-solid fa-dumbbell fs-4" style="color: #5862a9"></i>
-              <span class="head-limi">Muscle</span>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequatur perferendis consequuntur alias, ipsam sequi aliquid
-              </p>
-            </div>
-            <div class="row justify-content-center gap">
-              <div class="col-sm-12 col-md-6 col-lg-4 br">
-                <i
-                  class="fa-solid fa-person-pregnant fs-4"
-                  style="color: #5862a9"
-                ></i>
-                <span class="head-limi">Pregnancy</span>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequatur perferendis consequuntur alias, ipsam sequi
-                  aliquid
-                </p>
-              </div>
-              <div class="col-sm-12 col-md-6 col-lg-4 br">
-                <i
-                  class="fa-solid fa-people-group fs-4"
-                  style="color: #5862a9"
-                ></i>
-                <span class="head-limi">Race</span>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Consequatur perferendis consequuntur alias, ipsam sequi
-                  aliquid
+              <div class="col-md-6">
+                <h4>What is BMI?</h4>
+                <p class="BMI-def">
+                  BMI (Body Mass Index) is a measure that uses height and weight
+                  to estimate how much body fat someone has. This is determined
+                  by dividing a person's weight in kilograms by the square of
+                  their height in meters (kg/m²). BMI (short for "Body Mass
+                  Index") is a rating tool to help determine if you are at a
+                  healthy weight and what category of underweight, normal weight
+                  or overweight/obese that in which you fall.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="sec2">
+        <div class="design2" id="form">
+          <div class="units-head" id="unitscroll">
+            <div class="unitM">
+              <a
+                href=""
+                class="M text-decoration-none border-bottom-active"
+                id="unitM"
+                >Metric Units</a
+              >
+            </div>
+            <div class="unitU">
+              <a href="" class="U text-decoration-none" id="unitU">Us Units</a>
+            </div>
+          </div>
+
+          <div class="containert" id="metric">
+            <div class="box">
+              <h3 class="BMIheader">BMI Calculator</h3>
+              <div class="bmiContent">
+                <div class="Age">
+                  <label for="Age" class="Age">Age</label>
+                  <input type="number" class="ageInput" id="Age" required />
+                </div>
+                <div class="Sex">
+                  <input type="radio" name="gender" id="male" />
+                  <label class="text" for="male" id="male-label">Male</label>
+
+                  <input type="radio" name="gender" id="female" />
+                  <label class="text" for="female" id="female-label"
+                    >Female</label
+                  >
+                </div>
+                <div class="Scale">
+                  <div class="scale-input">
+                    <label for="height" id="height-label">Height</label>
+                    <input
+                      type="number"
+                      id="height"
+                      placeholder="                              cm"
+                      required
+                    />
+                  </div>
+                  <div class="scale-input">
+                    <label for="height" id="weight-label">Weight</label>
+                    <input
+                      type="number"
+                      id="weight"
+                      placeholder="                              kg"
+                    />
+                  </div>
+                </div>
+                <button class="calculate-BMI" href="" id="calculate">
+                  Calculate
+                </button>
+                <button class="calculate-BMI clear" id="clear" href="/">
+                  Clear
+                </button>
+              </div>
+              <div class="BMI-result">
+                <p class="result">0.00</p>
+                <p class="comment"></p>
+              </div>
+            </div>
+          </div>
+          <div class="containert hidden" id="USunit">
+            <div class="box">
+              <h3 class="BMIheader">BMI Calculator</h3>
+              <div class="bmiContent">
+                <div class="Age">
+                  <label for="Age" class="Age">Age</label>
+                  <input type="number" class="ageInput" id="Age" required />
+                </div>
+                <div class="Sex">
+                  <input type="radio" name="gender" id="male" />
+                  <label class="text" for="male" id="male-label">Male</label>
+
+                  <input type="radio" name="gender" id="female" />
+                  <label class="text" for="female" id="female-label"
+                    >Female</label
+                  >
+                </div>
+                <div class="Scale">
+                  <div class="scale-input">
+                    <label for="height" id="height-label">Height</label>
+                    <input
+                      type="number"
+                      id="heightfeet"
+                      placeholder="                 ft"
+                      class="w-25"
+                      required
+                    />
+                    <input
+                      type="number"
+                      id="heightIn"
+                      placeholder="                 in"
+                      required
+                      class="w-25"
+                    />
+                  </div>
+                  <div class="scale-input">
+                    <label for="height" id="weight-label">Weight</label>
+                    <input
+                      type="number"
+                      id="weightpounds"
+                      placeholder="                       pounds"
+                    />
+                  </div>
+                </div>
+                <button class="calculate-BMI" id="calculate2">Calculate</button>
+                <button class="calculate-BMI clear" id="clear2">Clear</button>
+              </div>
+              <div class="BMI-result">
+                <p class="result" id="result2">0.00</p>
+                <p class="comment" id="comment2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec3">
+        <div>
+          <h4 class="mt-5 BMI-limi">Limitations of BMI</h4>
+
+          <div class="container w-75 mb-5">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 br mr-3">
+                <div>
+                  <i
+                    class="fa-solid fa-cake-candles fs-4"
+                    style="color: #5862a9"
+                  ></i>
+                  <span class="head-limi">Age</span>
+                </div>
+                <p>
+                  BMI may not adequately measure nicely bodied fat amongst the
+                  elderly as a result of muscle loss and fats redistribution.
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 br mr-3">
+                <i
+                  class="fa-solid fa-person-half-dress fs-4"
+                  style="color: #5862a9"
+                ></i>
+                <span class="head-limi">Gender</span>
+                <p>
+                  The distribution of fat in men and women may differ, which
+                  could affect the results when they calculated BMI.
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 br mr-3">
+                <i class="fa-solid fa-dumbbell fs-4" style="color: #5862a9"></i>
+                <span class="head-limi">Muscle</span>
+                <p>
+                  A person who has very high muscle mass may weigh more, giving
+                  them a larger BMI despite not having too much body fat.
+                </p>
+              </div>
+              <div class="row justify-content-center gap">
+                <div class="col-sm-12 col-md-6 col-lg-4 br">
+                  <i
+                    class="fa-solid fa-person-pregnant fs-4"
+                    style="color: #5862a9"
+                  ></i>
+                  <span class="head-limi">Pregnancy</span>
+                  <p>
+                    Pregnancy involves weight gain and body changes, during
+                    pregnancy time BMI cannot be used to decide healthy weight.
+                  </p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 br">
+                  <i
+                    class="fa-solid fa-people-group fs-4"
+                    style="color: #5862a9"
+                  ></i>
+                  <span class="head-limi mb-3">Race</span>
+                  <p>
+                    Ethnic differences in body composition can result to
+                    misinterpretation of BMI outcomes across different races.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="text-center">
+      <a href="/" class="fs-6 text-center"> Open-source code </a>
+      <span class="fs-6 text-center"> by Divine Joseph</span>
     </div>
   </body>
-  <p>
-    <a href="https://github.com/itsdeedee/weather-react"> Open-source code </a>
-    by Divine Joseph
-  </p>
+
   <script src="script.js"></script>
 </html>

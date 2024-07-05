@@ -9,16 +9,17 @@ body {
 }
 .header1 {
   background-image: url(src/gym.png);
+
   background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 200px;
-  margin-top: -20px;
-  margin-left: -5px;
-  margin-bottom: 100px;
+  padding: 200px 30px;
 }
 h1 {
-  font-size: 50px;
-  color: #5862a9;
+  font-size: 55px;
+  color: #3e457b;
   margin-top: -10px;
   font-weight: 800;
 }
@@ -26,11 +27,10 @@ h2 {
   color: #5862a9;
   font-size: 40px;
   opacity: 0.5;
+  font-weight: 600;
   margin-bottom: 60px;
 }
-.head2 {
-  margin-left: -140px;
-}
+
 .BMI-link {
   text-decoration: none;
   font-size: 18px;
@@ -159,10 +159,14 @@ input {
   padding: 10px;
   border-radius: 50%;
   margin-top: -25px;
+  position: relative;
+  z-index: 1;
 }
 
 .bodyImg {
   margin-top: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 h4 {
@@ -179,6 +183,7 @@ h4 {
 .design2 {
   background-color: white;
   position: relative;
+  margin-bottom: 100px;
 }
 .units-head {
   display: flex;
@@ -211,4 +216,63 @@ i {
   border: 2px solid #5862a9;
   padding: 10px;
   border-radius: 5px;
+  margin-bottom: 10px;
+}
+.BMI-limi {
+  border: #5862a9 2px solid;
+  width: 29%;
+  margin: 0 auto;
+  border-radius: 6px;
+  margin-bottom: 100px;
+  padding: 6px 0px;
+}
+section {
+  padding: 20px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+section p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media screen and (max-width: 550px) {
+  .BMI-limi {
+    border: #5862a9 2px solid;
+    width: 50%;
+  }
+  BMI-link {
+    font-size: 18px;
+  }
+
+  .BMI-link {
+    background-color: #5862a9;
+    color: white;
+  }
+  .BMI-link:hover {
+    border: 2px solid #5862a9;
+    color: #5862a9;
+    background-color: white;
+    box-shadow: 1px 2px 1px 1px;
+  }
+  .header1 {
+    padding: 150px;
+  }
+  .header1 {
+    padding: 150px 40px;
+  }
+  .box {
+    max-width: 340px;
+  }
 }

@@ -102,3 +102,30 @@ function clearForm() {
 }
 Clear.addEventListener("click", clearForm);
 Clear2.addEventListener("click", clearForm);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const options = {
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        entry.target.querySelectorAll("p").forEach((p) => {
+          p.classList.add("visible");
+        });
+      } else {
+        entry.target.classList.remove("visible");
+        entry.target.querySelectorAll("p").forEach((p) => {
+          p.classList.remove("visible");
+        });
+      }
+    });
+  }, options);
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
