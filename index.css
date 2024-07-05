@@ -9,7 +9,6 @@ body {
 }
 .header1 {
   background-image: url(src/gym.png);
-
   background-size: 100%;
   background-size: cover;
   background-position: center;
@@ -278,5 +277,8 @@ section p.visible {
   .result {
     margin-left: 140px;
     margin-right: 140px;
+  }
+  .header1 {
+    background-size: 400%;
   }
 }
