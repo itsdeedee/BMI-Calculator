@@ -275,4 +275,8 @@ section p.visible {
   .box {
     max-width: 340px;
   }
+  .result {
+    margin-left: 140px;
+    margin-right: 140px;
+  }
 }
